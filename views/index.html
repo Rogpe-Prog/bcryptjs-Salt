@@ -1,0 +1,15 @@
+
+<form method="POST" action="/bcr">
+    <input type="text" name="username" placeholder="Enter user name" disabled>
+    <input type="text" name="password" placeholder="Enter password">
+    <button type="submit">Go...</button>
+</form>
+
+    <% passes.forEach(pass => { %>
+        <p>Password: <%= pass %></p>
+    <% }) %>
+
+    <% hashes.forEach(hash => { %>
+      <p>Hash: <%= hash %></p>
+    <% }) %>
+
